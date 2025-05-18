@@ -85,7 +85,6 @@ SET time_of_day = (
 );
 
 
-
 -- Add day_name column
 
 SELECT
