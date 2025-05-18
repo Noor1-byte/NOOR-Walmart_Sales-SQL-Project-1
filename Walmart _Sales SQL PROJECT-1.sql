@@ -392,6 +392,22 @@ WHERE branch = "C"
 GROUP BY gender
 ORDER BY gender_cnt DESC;
 
+SELECT 
+	GENDER,
+	COUNT(*) AS GENDER_CNT
+FROM WALMART_SALES
+WHERE BRANCH = 'A'
+GROUP BY GENDER
+ORDER BY GENDER_CNT DESC;
+
+SELECT 
+	GENDER,
+	COUNT(*) AS GENDER_CNT
+FROM  WALMART_SALES
+WHERE BRANCH = 'B'
+GROUP BY GENDER
+ORDER BY GENDER_CNT DESC;
+
 -- Gender per branch is more or less the same hence, I don't think has
 -- an effect of the sales per branch and other factors.
 
