@@ -338,10 +338,11 @@ ORDER BY AVG_TAX_PCT DESC;
 -- Which customer type pays the most in VAT?
 SELECT 
 	CUSTOMER_TYPE,
-AVG(VAT) AS AVG_VAT
+ROUND(AVG(VAT),2) AS AVG_VAT
 FROM WALMART_SALES
 GROUP BY CUSTOMER_TYPE
 ORDER BY AVG_VAT DESC;
+
 
 -- --------------------------------------------------------------------
 -- -------------------------- Customers -------------------------------
